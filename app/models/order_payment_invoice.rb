@@ -1,0 +1,2 @@
+class OrderPaymentInvoice < OrderPayment
+end

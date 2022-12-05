@@ -1,0 +1,1 @@
+class SyncedProduct < Product; end

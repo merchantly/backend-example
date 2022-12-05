@@ -1,0 +1,28 @@
+= javascript_include_tag 'https://widget.cloudpayments.ru/bundles/cloudpayments'
+:javascript
+  $(function() {
+    var pay = function () {
+      var widget = new cp.CloudPayments();
+      widget.charge({
+        publicId: #{payment_type.cloud_payments_public_id.to_json.html_safe},
+        description: #{order.invoice_title.to_json.html_safe},
+        amount: #{order.total_with_delivery_price.to_f},
+        currency: #{order.currency.to_s.to_json.html_safe},
+        invoiceId: #{order.external_id.to_json.html_safe},
+        accountId: #{order.client_id.to_json.html_safe}, email: #{order.email.to_json.html_safe},
+        data: {
+          vendor_id: #{order.vendor_id.to_json.html_safe},
+          email: #{order.email.to_json.html_safe},
+          phone: #{order.phone.to_json.html_safe},
+          cloudPayments: {
+            customerReceipt: #{CloudPaymentReceiptData.new(order: order).data.to_json.html_safe},
+          }
+        }
+        },
+        #{success_vendor_payments_cloud_payments_url(order_id: order.id).to_json.html_safe},
+        #{failure_vendor_payments_cloud_payments_url(order_id: order.id).to_json.html_safe}
+      );
+    };
+    window.pay = pay;
+    pay();
+  });

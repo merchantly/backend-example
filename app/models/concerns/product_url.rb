@@ -1,0 +1,2 @@
+module ProductUrl
+end

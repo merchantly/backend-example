@@ -1,0 +1,23 @@
+%div{ style: 'margin: 0 auto; width: 50%' }
+  = image_tag '/images/integrations/robokassa.png'
+  = form_tag 'https://auth.robokassa.ru/Merchant/Index.aspx', method: :post do
+    = hidden_field_tag 'MrchLogin', robokassa.login
+    = hidden_field_tag 'OutSum', robokassa.default_out_sum, data: { total_price: true }
+    = hidden_field_tag 'InvId', robokassa.order_id
+    = hidden_field_tag 'Desc', robokassa.description
+    = hidden_field_tag 'SignatureValue', robokassa.default_signature, data: { signature_value: true }
+    = select_tag 'IncCurrLabel', options_for_robokassa_currencies_select(robokassa.commissions), data: { curr_label: true } if robokassa.has_commission?
+    = hidden_field_tag 'Culture', robokassa.locale
+    = hidden_field_tag 'Shp_orderid', robokassa.order_id
+    = hidden_field_tag 'Receipt', robokassa.escape_receipt if robokassa.escape_receipt.present?
+    = submit_tag 'Оплатить'
+
+
+:javascript
+  $('[data-curr-label]').change(function(){
+    outSum = $('[data-curr-label] option:selected').data('out-sum');
+    signature = $('[data-curr-label] option:selected').data('signature');
+
+    $('[data-total-price]').val(outSum);
+    $('[data-signature-value]').val(signature);
+  });

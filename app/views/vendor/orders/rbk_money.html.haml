@@ -1,0 +1,4 @@
+%div{ style: 'margin: 20px auto 0 auto; width: 50%' }
+  %form{:action => success_vendor_payments_rbk_money_url, :method => "GET"}
+    %script.rbkmoney-checkout{"data-description" => invoice.description, "data-email" => invoice.email, "data-hold-expiration" => "capture", "data-invoice-access-token" => invoice.access_token, "data-invoice-id" => invoice.id, "data-label" => "Оплатить с карты", "data-name" => invoice.title, "data-pay-button-label" => "Оплатить", "data-payment-flow-hold" => "true", :src => "https://checkout.rbk.money/checkout.js"}
+      :cdata

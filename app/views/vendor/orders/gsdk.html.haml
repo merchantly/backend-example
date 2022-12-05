@@ -1,0 +1,95 @@
+!!!
+%html
+  %head
+    %meta{:content => "text/html; charset=UTF-8", "http-equiv" => "Content-Type"}/
+    - if gsdk_form.is_test
+      = javascript_include_tag "https://sdk-public-res.s3-eu-west-1.amazonaws.com/mpgs/stage/geidea-api.bundle.js?v=#{Time.zone.now.to_i}", rel: 'preload'
+    - else
+      = javascript_include_tag "https://sdk-public-res.s3-eu-west-1.amazonaws.com/mpgs/prod/geidea-api.bundle.js?v=#{Time.zone.now.to_i}", rel: 'preload'
+    = javascript_include_tag 'spin'
+    = stylesheet_link_tag 'spin'
+  %body
+    #spinner
+
+    - if gsdk_form.payment_type == Gsdk::ONLINE_PAYMENT
+      :javascript
+        try {
+          var spinner = new Spinner();
+          const myApi = new GeideaApi({
+            tid: #{gsdk_form.tid.to_json.html_safe},
+            mid: #{gsdk_form.mid.to_json.html_safe},
+          });
+
+          const paymentPromise = myApi.createPayment({
+            orderId: #{gsdk_form.order_id.to_json.html_safe},
+            amount: #{gsdk_form.amount},
+            currency: #{gsdk_form.currency.to_json.html_safe},
+            callbackUrl: #{gsdk_form.callback_url.to_json.html_safe},
+            successRedirectUrl: #{gsdk_form.success_url.to_json.html_safe},
+            errorRedirectUrl: #{gsdk_form.cancel_url.to_json.html_safe},
+            cancelRedirectUrl: #{gsdk_form.cancel_url.to_json.html_safe},
+            onLoadingStart() {
+              spinner.spin(document.getElementById('spinner'));
+            },
+            onLoadingEnd() {
+              spinner.stop();
+            },
+            interaction: {
+              billingAddressMode: 'HIDE',
+              cardSecurityMode: 'MANDATORY',
+              confirmAchAccountMode: 'HIDE',
+              customerEmailMode: 'HIDE',
+            },
+          });
+
+          paymentPromise.then(function (result) {
+            console.log('Payment success');
+          }, function (error) {
+            alert("Rejected: " + error);
+          });
+        } catch(err) {
+          alert(err);
+        }
+    - elsif gsdk_form.payment_type == Gsdk::E_INVOICE
+      :javascript
+        try {
+          var spinner = new Spinner();
+          const myApi = new GeideaApi({
+            tid: #{gsdk_form.tid.to_json.html_safe},
+            mid: #{gsdk_form.mid.to_json.html_safe},
+          });
+
+          const paymentPromise = myApi.createMerchantSession({
+            orderId: #{gsdk_form.order_id.to_json.html_safe},
+            amount: #{gsdk_form.amount},
+            currency: #{gsdk_form.currency.to_json.html_safe},
+            callbackUrl: #{gsdk_form.callback_url.to_json.html_safe},
+            successRedirectUrl: #{gsdk_form.success_url.to_json.html_safe},
+            errorRedirectUrl: #{gsdk_form.cancel_url.to_json.html_safe},
+            cancelRedirectUrl: #{gsdk_form.cancel_url.to_json.html_safe},
+            onLoadingStart() {
+              spinner.spin(document.getElementById('spinner'));
+            },
+            onLoadingEnd() {
+              spinner.stop();
+            },
+          });
+
+          paymentPromise.then(function (result) {
+            myApi.executeMerchantSession({
+              paymentId: result,
+              onLoadingStart() {
+                spinner.spin(document.getElementById('spinner'));
+              },
+              onLoadingEnd() {
+                spinner.stop();
+              },
+            });
+          }, function (error) {
+            alert("Rejected: " + error);
+          });
+        } catch(err) {
+          alert(err);
+        }
+    - else
+      - raise "Unknown #{gsdk_form.payment_type}"

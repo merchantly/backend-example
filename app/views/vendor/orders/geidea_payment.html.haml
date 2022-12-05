@@ -1,0 +1,30 @@
+!!!
+%html
+  %head
+    %meta{:content => "text/html; charset=UTF-8", "http-equiv" => "Content-Type"}/
+    = javascript_include_tag "https://www.merchant.geidea.net/hpp/geideapay.min.js?v=#{Time.zone.now.to_i}", rel: 'preload'
+    %link{:href => "https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css", :rel => "stylesheet"}/
+  %body
+    #main-container
+    :javascript
+      try {
+        var onSuccess = function(_data) {
+          document.location.href = #{geidea_payment_form.success_url.to_json.html_safe};
+        }
+
+        var onError = function(data) {
+          alert(data.responseCode + ': ' + data.responseMessage)
+        }
+
+        var onCancel = function(_data) {
+          document.location.href = #{geidea_payment_form.cancel_url.to_json.html_safe};
+        }
+
+        var api = new GeideaApi(#{geidea_payment_form.merchant_id.to_json.html_safe}, onSuccess, onError, onCancel);
+
+        api.configurePayment(#{geidea_payment_form.configure_payment_params.to_json.html_safe});
+
+        api.startPayment('main-container');
+      } catch(err) {
+        alert(err);
+      }

@@ -1,0 +1,25 @@
+:css
+  .tinkoffPayRow{display:block;margin:1%;width:160px;}
+%script{:src => "https://securepay.tinkoff.ru/html/payForm/js/tinkoff_v2.js"}
+
+%div{ style: 'margin: 0 auto; width: 50%' }
+  = image_tag '/images/integrations/tinkoff.png', width: 200
+  = form_tag '#', onsubmit: 'pay(this); return false;', name: 'TinkoffPayForm' do
+    = hidden_field_tag 'terminalkey', tinkoff.terminalkey
+    = hidden_field_tag 'frame', 'false'
+    = hidden_field_tag 'language', tinkoff.language
+    = hidden_field_tag 'amount', tinkoff.amount
+    = hidden_field_tag 'order', tinkoff.order_id
+    = hidden_field_tag 'description', tinkoff.description
+    = hidden_field_tag 'name', tinkoff.name
+    = hidden_field_tag 'email', tinkoff.email
+    = hidden_field_tag 'phone', tinkoff.phone
+    = hidden_field_tag 'receipt', tinkoff.receipt if tinkoff.receipt.present?
+    = submit_tag 'Оплатить'
+
+%p Через 10 секунд Вас перекинет на страницу оплаты
+
+:javascript
+  $(document).ready(function() {
+    $('form').submit();
+  });
