@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<mails>
+  <mailNum>1</mailNum>
+  <mail>
+    <mailCode>123123</mailCode>
+    <orderNumber>kiosk-1</orderNumber>
+    <invoiceCompany>123123:1</invoiceCompany>
+    <currStatus>OK</currStatus>
+    <currStatusDescription>Груз был доставлен получателю</currStatusDescription>
+    <currCity>MOW</currCity>
+    <currCountry>РОССИЯ</currCountry>
+    <currDealTime>2014-11-29 17:41:37</currDealTime>
+    <flowInfo>
+      <seqNo>1</seqNo>
+      <dealTime>2014-11-27 17:13:14</dealTime>
+      <mailStatus>WC</mailStatus>
+      <mailStatusDescription>Ожидает подтверждения </mailStatusDescription>
+      <dealCountry>РОССИЯ</dealCountry>
+      <dealCity>MOW</dealCity>
+      <remark />
+    </flowInfo>
+    <flowInfo>
+      <seqNo>2</seqNo>
+      <dealTime>2014-11-27 17:13:14</dealTime>
+      <mailStatus>PS</mailStatus>
+      <mailStatusDescription>Прием заявки</mailStatusDescription>
+      <dealCountry>РОССИЯ</dealCountry>
+      <dealCity>MOW</dealCity>
+      <remark />
+    </flowInfo>
+    <flowInfo>
+      <seqNo>3</seqNo>
+      <dealTime>2014-11-28 10:49:44</dealTime>
+      <mailStatus>OH</mailStatus>
+      <mailStatusDescription>Груз находится на терминале компании и его доставка приостановлена</mailStatusDescription>
+      <dealCountry>РОССИЯ</dealCountry>
+      <dealCity>MOW</dealCity>
+      <remark />
+    </flowInfo>
+    <flowInfo>
+      <seqNo>4</seqNo>
+      <dealTime>2014-11-28 10:49:44</dealTime>
+      <mailStatus>SW</mailStatus>
+      <mailStatusDescription>Каждое место груза было перевзвешено в течение процесса обработки груза</mailStatusDescription>
+      <dealCountry>РОССИЯ</dealCountry>
+      <dealCity>MOW</dealCity>
+      <remark />
+    </flowInfo>
+    <flowInfo>
+      <seqNo>5</seqNo>
+      <dealTime>2014-11-29 03:38:09</dealTime>
+      <mailStatus>RS</mailStatus>
+      <mailStatusDescription>Сообщает, что груз был распределён на соответствующий маршрут</mailStatusDescription>
+      <dealCountry>РОССИЯ</dealCountry>
+      <dealCity>MOW</dealCity>
+      <remark />
+    </flowInfo>
+    <flowInfo>
+      <seqNo>6</seqNo>
+      <dealTime>2014-11-29 08:12:24</dealTime>
+      <mailStatus>DC</mailStatus>
+      <mailStatusDescription>Груз находится на доставке у курьера и доставка будет осуществлена в течение дня.</mailStatusDescription>
+      <dealCountry>РОССИЯ</dealCountry>
+      <dealCity>MOW</dealCity>
+      <remark />
+    </flowInfo>
+    <flowInfo>
+      <seqNo>7</seqNo>
+      <dealTime>2014-11-29 13:01:53</dealTime>
+      <mailStatus>MO</mailStatus>
+      <mailStatusDescription>Доставка груза была перенесена на другую дату</mailStatusDescription>
+      <dealCountry>РОССИЯ</dealCountry>
+      <dealCity>MOW</dealCity>
+      <remark />
+    </flowInfo>
+    <flowInfo>
+      <seqNo>8</seqNo>
+      <dealTime>2014-11-29 17:41:37</dealTime>
+      <mailStatus>OK</mailStatus>
+      <mailStatusDescription>Груз был доставлен получателю</mailStatusDescription>
+      <dealCountry>РОССИЯ</dealCountry>
+      <dealCity>MOW</dealCity>
+      <remark />
+    </flowInfo>
+  </mail>
+</mails>

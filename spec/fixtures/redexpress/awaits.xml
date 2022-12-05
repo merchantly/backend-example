@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<mails>
+  <mailNum>1</mailNum>
+  <mail>
+    <mailCode>102043379</mailCode>
+    <orderNumber>kiosk-68-3221</orderNumber>
+    <invoiceCompany>105981838491:kiosk-68-3221</invoiceCompany>
+    <currStatus>WC</currStatus>
+    <currStatusDescription>Ожидает подтверждения </currStatusDescription>
+    <currCity>MOW</currCity>
+    <currCountry>РОССИЯ</currCountry>
+    <currDealTime>0001-01-01 00:00:00</currDealTime>
+  </mail>
+</mails>

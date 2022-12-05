@@ -1,0 +1,81 @@
+---
+http_interactions:
+- request:
+    method: post
+    uri: https://dadata.ru/api/v2/clean/address
+    body:
+      encoding: UTF-8
+      string: '["ere3eekjevb"]'
+    headers:
+      Content-Type:
+      - application/json
+      Authorization:
+      - Token test
+      X-Secret:
+      - test
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+      User-Agent:
+      - Ruby
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Server:
+      - nginx/1.6.0
+      Date:
+      - Wed, 27 Jan 2016 16:37:36 GMT
+      Content-Type:
+      - application/json
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+      Vary:
+      - Accept, Cookie, Accept-Language
+      - Accept-Encoding
+      Access-Control-Allow-Headers:
+      - Authorization,Content-Type,X-Checksum
+      Content-Language:
+      - ru
+      Allow:
+      - POST, OPTIONS
+      Access-Control-Allow-Origin:
+      - "*"
+      Access-Control-Allow-Methods:
+      - POST,GET,OPTIONS
+      X-Content-Type-Options:
+      - nosniff
+      X-Xss-Protection:
+      - 1; mode=block;
+    body:
+      encoding: ASCII-8BIT
+      string: !binary |-
+        W3sic291cmNlIjogImVyZTNlZWtqZXZiIiwgInJlc3VsdCI6IG51bGwsICJw
+        b3N0YWxfY29kZSI6IG51bGwsICJjb3VudHJ5IjogbnVsbCwgInJlZ2lvbl90
+        eXBlIjogbnVsbCwgInJlZ2lvbl90eXBlX2Z1bGwiOiBudWxsLCAicmVnaW9u
+        IjogbnVsbCwgImFyZWFfdHlwZSI6IG51bGwsICJhcmVhX3R5cGVfZnVsbCI6
+        IG51bGwsICJhcmVhIjogbnVsbCwgImNpdHlfdHlwZSI6IG51bGwsICJjaXR5
+        X3R5cGVfZnVsbCI6IG51bGwsICJjaXR5IjogbnVsbCwgInNldHRsZW1lbnRf
+        dHlwZSI6IG51bGwsICJzZXR0bGVtZW50X3R5cGVfZnVsbCI6IG51bGwsICJz
+        ZXR0bGVtZW50IjogbnVsbCwgImNpdHlfZGlzdHJpY3QiOiBudWxsLCAic3Ry
+        ZWV0X3R5cGUiOiBudWxsLCAic3RyZWV0X3R5cGVfZnVsbCI6IG51bGwsICJz
+        dHJlZXQiOiBudWxsLCAiaG91c2VfdHlwZSI6IG51bGwsICJob3VzZV90eXBl
+        X2Z1bGwiOiBudWxsLCAiaG91c2UiOiBudWxsLCAiYmxvY2tfdHlwZSI6IG51
+        bGwsICJibG9ja190eXBlX2Z1bGwiOiBudWxsLCAiYmxvY2siOiBudWxsLCAi
+        ZmxhdF90eXBlIjogbnVsbCwgImZsYXRfdHlwZV9mdWxsIjogbnVsbCwgImZs
+        YXQiOiBudWxsLCAicG9zdGFsX2JveCI6IG51bGwsICJrbGFkcl9pZCI6IG51
+        bGwsICJmaWFzX2lkIjogbnVsbCwgImZpYXNfbGV2ZWwiOiAiLTEiLCAiY2Fw
+        aXRhbF9tYXJrZXIiOiAiMCIsICJva2F0byI6IG51bGwsICJva3RtbyI6IG51
+        bGwsICJ0YXhfb2ZmaWNlIjogbnVsbCwgInRheF9vZmZpY2VfbGVnYWwiOiBu
+        dWxsLCAiZmxhdF9hcmVhIjogbnVsbCwgInNxdWFyZV9tZXRlcl9wcmljZSI6
+        IG51bGwsICJmbGF0X3ByaWNlIjogbnVsbCwgInRpbWV6b25lIjogbnVsbCwg
+        Imdlb19sYXQiOiBudWxsLCAiZ2VvX2xvbiI6IG51bGwsICJxY19nZW8iOiA1
+        LCAicWNfY29tcGxldGUiOiAxLCAicWNfaG91c2UiOiAxMCwgInFjIjogMSwg
+        InVucGFyc2VkX3BhcnRzIjogItCV0KDQlSwgMywg0JjQmtCV0JLQkSJ9XQ==
+    http_version:
+  recorded_at: Wed, 27 Jan 2016 16:38:02 GMT
+recorded_with: VCR 2.9.3

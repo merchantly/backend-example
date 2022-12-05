@@ -1,0 +1,147 @@
+---
+http_interactions:
+- request:
+    method: post
+    uri: http://api.taaasty.com/v1/entries/image.json
+    body:
+      encoding: US-ASCII
+      string: title=%3Cp%3E%0Aproduct_title1+%E2%80%93+10+%D1%80%D1%83%D0%B1.%0A%3C%2Fp%3E%0A%3Cp%3E%0A%3Ca+class%3D%22button+button--green%22+href%3D%22http%3A%2F%2Fcompany11495461031.ru%2Fproducts%2F1-product_title1%3Futm_source%3Dtaaasty%26amp%3Butm_medium%3Dpotok%26amp%3Butm_campaign%3Dshop%22%3E%D0%9A%D1%83%D0%BF%D0%B8%D1%82%D1%8C%3C%2Fa%3E%0A%3C%2Fp%3E%0A&image_url=https%3A%2F%2Fassets.kiiiosk.ru%2Fimages%2Ffallback%2Fproduct-none.png&tlog_id&privacy=public_with_voting
+    headers:
+      X-User-Token:
+      - invalid_token
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+      User-Agent:
+      - Ruby
+      Content-Type:
+      - application/x-www-form-urlencoded
+  response:
+    status:
+      code: 401
+      message: Unauthorized
+    headers:
+      Server:
+      - nginx
+      Date:
+      - Mon, 22 May 2017 13:50:33 GMT
+      Content-Type:
+      - application/json
+      Content-Length:
+      - '89'
+      Connection:
+      - keep-alive
+      Status:
+      - 401 Unauthorized
+      Cache-Control:
+      - no-cache
+      X-Request-Id:
+      - d42de133-624d-4892-83c7-599f29ab6717
+      X-Runtime:
+      - '0.003558'
+      X-Rack-Cache:
+      - invalidate, pass
+    body:
+      encoding: UTF-8
+      string: '{"response_code":401,"error_code":"invalid_token","error":"Unauthorized.
+        Invalid token."}'
+    http_version: 
+  recorded_at: Mon, 22 May 2017 13:50:36 GMT
+- request:
+    method: post
+    uri: http://api.taaasty.com/v1/entries/image.json
+    body:
+      encoding: US-ASCII
+      string: title=%3Cp%3E%0Aproduct_title1+%E2%80%93+10+%D1%80%D1%83%D0%B1.%0A%3C%2Fp%3E%0A%3Cp%3E%0A%3Ca+class%3D%22button+button--green%22+href%3D%22http%3A%2F%2Fcompany11495461031.ru%2Fproducts%2F1-product_title1%3Futm_source%3Dtaaasty%26amp%3Butm_medium%3Dpotok%26amp%3Butm_campaign%3Dshop%22%3E%D0%9A%D1%83%D0%BF%D0%B8%D1%82%D1%8C%3C%2Fa%3E%0A%3C%2Fp%3E%0A&image_url=https%3A%2F%2Fassets.kiiiosk.ru%2Fimages%2Ffallback%2Fproduct-none.png&tlog_id&privacy=public_with_voting
+    headers:
+      X-User-Token:
+      - invalid_token
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+      User-Agent:
+      - Ruby
+      Content-Type:
+      - application/x-www-form-urlencoded
+  response:
+    status:
+      code: 401
+      message: Unauthorized
+    headers:
+      Server:
+      - nginx
+      Date:
+      - Mon, 22 May 2017 13:50:35 GMT
+      Content-Type:
+      - application/json
+      Content-Length:
+      - '89'
+      Connection:
+      - keep-alive
+      Status:
+      - 401 Unauthorized
+      Cache-Control:
+      - no-cache
+      X-Request-Id:
+      - c9458b51-986e-4678-829e-cc3e9e348588
+      X-Runtime:
+      - '0.009193'
+      X-Rack-Cache:
+      - invalidate, pass
+    body:
+      encoding: UTF-8
+      string: '{"response_code":401,"error_code":"invalid_token","error":"Unauthorized.
+        Invalid token."}'
+    http_version: 
+  recorded_at: Mon, 22 May 2017 13:50:39 GMT
+- request:
+    method: post
+    uri: http://api.taaasty.com/v1/entries/image.json
+    body:
+      encoding: US-ASCII
+      string: title=%3Cp%3E%0Aproduct_title1+%E2%80%93+10+%D1%80%D1%83%D0%B1.%0A%3C%2Fp%3E%0A%3Cp%3E%0A%3Ca+class%3D%22button+button--green%22+href%3D%22http%3A%2F%2Fcompany11495461031.ru%2Fproducts%2F1-product_title1%3Futm_source%3Dtaaasty%26amp%3Butm_medium%3Dpotok%26amp%3Butm_campaign%3Dshop%22%3E%D0%9A%D1%83%D0%BF%D0%B8%D1%82%D1%8C%3C%2Fa%3E%0A%3C%2Fp%3E%0A&image_url=https%3A%2F%2Fassets.kiiiosk.ru%2Fimages%2Ffallback%2Fproduct-none.png&tlog_id&privacy=public_with_voting
+    headers:
+      X-User-Token:
+      - invalid_token
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+      User-Agent:
+      - Ruby
+      Content-Type:
+      - application/x-www-form-urlencoded
+  response:
+    status:
+      code: 401
+      message: Unauthorized
+    headers:
+      Server:
+      - nginx
+      Date:
+      - Mon, 22 May 2017 13:50:38 GMT
+      Content-Type:
+      - application/json
+      Content-Length:
+      - '89'
+      Connection:
+      - keep-alive
+      Status:
+      - 401 Unauthorized
+      Cache-Control:
+      - no-cache
+      X-Request-Id:
+      - 779b2fd9-5cbb-4b50-b44e-9cf45e1de85f
+      X-Runtime:
+      - '0.004531'
+      X-Rack-Cache:
+      - invalidate, pass
+    body:
+      encoding: UTF-8
+      string: '{"response_code":401,"error_code":"invalid_token","error":"Unauthorized.
+        Invalid token."}'
+    http_version: 
+  recorded_at: Mon, 22 May 2017 13:50:42 GMT
+recorded_with: VCR 3.0.3

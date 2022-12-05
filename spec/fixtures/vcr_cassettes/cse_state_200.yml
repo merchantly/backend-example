@@ -1,0 +1,62 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://service.cse-cargo.ru/JSONWebService.asmx/Tracking?documentType=order&login=login&number=999-0002208013&numberType=internalnumber&password=123
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+      User-Agent:
+      - Ruby
+      Host:
+      - service.cse-cargo.ru
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Cache-Control:
+      - private, max-age=0
+      Content-Type:
+      - application/json; charset=utf-8
+      Server:
+      - Microsoft-IIS/7.5
+      Access-Control-Allow-Origin:
+      - "*"
+      X-Aspnet-Version:
+      - 4.0.30319
+      X-Powered-By:
+      - ASP.NET
+      Date:
+      - Tue, 23 Dec 2014 14:59:11 GMT
+      Content-Length:
+      - '778'
+    body:
+      encoding: ASCII-8BIT
+      string: !binary |-
+        eyJkb2N1bWVudHMiOlt7Im51bWJlciI6Ijk5OS0wMDAyMjA4MDEzIiwiY2xp
+        ZW50TnVtYmVyIjoiIiwibmFtZSI6IiIsInBhY2thZ2VzIjpudWxsLCJkZWxl
+        dGlvbk1hcmsiOmZhbHNlLCJsYXN0RXZlbnREYXRlVGltZSI6IlwvRGF0ZSgx
+        NDE5MzIwOTE1MDAwKVwvIiwibGFzdEV2ZW50RGF0ZVRpbWVJU08iOiIyMDE0
+        LTEyLTIzVDEwOjQ4OjM1IiwibGFzdEV2ZW50U3RhdGUiOiLQl9Cw0LrQsNC3
+        INC/0YDQuNC90Y/Rgiwg0LjQtNC10YIg0L7QsdGA0LDQsdC+0YLQutCwINC3
+        0LDQutCw0LfQsC4iLCJsYXN0RXZlbnRTdGF0ZUNvZGUiOiIwYmNmZmRhMy1k
+        MGNhLTQxMDQtYmM1OC1mYmQzNzRmMzI1Y2QiLCJsYXN0RXZlbnROYW1lIjoi
+        IiwibGFzdEV2ZW50Q29tbWVudCI6IiIsImRlbGl2ZXJ5RGF0ZVRpbWUiOm51
+        bGwsImRlbGl2ZXJ5RGF0ZVRpbWVJU08iOm51bGwsInJlY2lwaWVudCI6IiIs
+        Imhpc3RvcnkiOlt7ImV2ZW50RGF0ZVRpbWUiOiJcL0RhdGUoMTQxOTMyMDkx
+        NTAwMClcLyIsImV2ZW50RGF0ZVRpbWVJU08iOiIyMDE0LTEyLTIzVDEwOjQ4
+        OjM1IiwiZXZlbnRTdGF0ZSI6ItCX0LDQutCw0Lcg0L/RgNC40L3Rj9GCLCDQ
+        uNC00LXRgiDQvtCx0YDQsNCx0L7RgtC60LAg0LfQsNC60LDQt9CwLiIsImV2
+        ZW50U3RhdGVDb2RlIjoiMGJjZmZkYTMtZDBjYS00MTA0LWJjNTgtZmJkMzc0
+        ZjMyNWNkIiwiZXZlbnROYW1lIjoiIiwiZXZlbnRDb21tZW50IjoiIn1dLCJl
+        cnJvciI6ZmFsc2UsImVycm9ySW5mbyI6IiJ9XSwiZXJyb3IiOmZhbHNlLCJl
+        cnJvckluZm8iOiIifQ==
+    http_version:
+  recorded_at: Tue, 23 Dec 2014 14:59:16 GMT
+recorded_with: VCR 2.9.3

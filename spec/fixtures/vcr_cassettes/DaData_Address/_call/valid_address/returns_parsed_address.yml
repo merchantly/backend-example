@@ -1,0 +1,88 @@
+---
+http_interactions:
+- request:
+    method: post
+    uri: https://dadata.ru/api/v2/clean/address
+    body:
+      encoding: UTF-8
+      string: '["мск сухонска 11/-89"]'
+    headers:
+      Content-Type:
+      - application/json
+      Authorization:
+      - Token test
+      X-Secret:
+      - test
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+      User-Agent:
+      - Ruby
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Server:
+      - nginx/1.6.0
+      Date:
+      - Wed, 27 Jan 2016 16:33:39 GMT
+      Content-Type:
+      - application/json
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+      Vary:
+      - Accept, Cookie, Accept-Language
+      - Accept-Encoding
+      Access-Control-Allow-Headers:
+      - Authorization,Content-Type,X-Checksum
+      Content-Language:
+      - ru
+      Allow:
+      - POST, OPTIONS
+      Access-Control-Allow-Origin:
+      - "*"
+      Access-Control-Allow-Methods:
+      - POST,GET,OPTIONS
+      X-Content-Type-Options:
+      - nosniff
+      X-Xss-Protection:
+      - 1; mode=block;
+    body:
+      encoding: ASCII-8BIT
+      string: !binary |-
+        W3sic291cmNlIjogItC80YHQuiDRgdGD0YXQvtC90YHQutCwIDExLy04OSIs
+        ICJyZXN1bHQiOiAi0KDQvtGB0YHQuNGPLCDQsyDQnNC+0YHQutCy0LAsINGD
+        0Lsg0KHRg9GF0L7QvdGB0LrQsNGPLCDQtCAxMSwg0LrQsiA4OSIsICJwb3N0
+        YWxfY29kZSI6ICIxMjc2NDIiLCAiY291bnRyeSI6ICLQoNC+0YHRgdC40Y8i
+        LCAicmVnaW9uX3R5cGUiOiAi0LMiLCAicmVnaW9uX3R5cGVfZnVsbCI6ICLQ
+        s9C+0YDQvtC0IiwgInJlZ2lvbiI6ICLQnNC+0YHQutCy0LAiLCAiYXJlYV90
+        eXBlIjogbnVsbCwgImFyZWFfdHlwZV9mdWxsIjogbnVsbCwgImFyZWEiOiBu
+        dWxsLCAiY2l0eV90eXBlIjogbnVsbCwgImNpdHlfdHlwZV9mdWxsIjogbnVs
+        bCwgImNpdHkiOiBudWxsLCAic2V0dGxlbWVudF90eXBlIjogbnVsbCwgInNl
+        dHRsZW1lbnRfdHlwZV9mdWxsIjogbnVsbCwgInNldHRsZW1lbnQiOiBudWxs
+        LCAiY2l0eV9kaXN0cmljdCI6ICLQodC10LLQtdGA0L3QvtC1INCc0LXQtNCy
+        0LXQtNC60L7QstC+INGALdC9IiwgInN0cmVldF90eXBlIjogItGD0LsiLCAi
+        c3RyZWV0X3R5cGVfZnVsbCI6ICLRg9C70LjRhtCwIiwgInN0cmVldCI6ICLQ
+        odGD0YXQvtC90YHQutCw0Y8iLCAiaG91c2VfdHlwZSI6ICLQtCIsICJob3Vz
+        ZV90eXBlX2Z1bGwiOiAi0LTQvtC8IiwgImhvdXNlIjogIjExIiwgImJsb2Nr
+        X3R5cGUiOiBudWxsLCAiYmxvY2tfdHlwZV9mdWxsIjogbnVsbCwgImJsb2Nr
+        IjogbnVsbCwgImZsYXRfdHlwZSI6ICLQutCyIiwgImZsYXRfdHlwZV9mdWxs
+        IjogItC60LLQsNGA0YLQuNGA0LAiLCAiZmxhdCI6ICI4OSIsICJwb3N0YWxf
+        Ym94IjogbnVsbCwgImtsYWRyX2lkIjogIjc3MDAwMDAwMDAwMjgzNjAwMDQi
+        LCAiZmlhc19pZCI6ICI1ZWU4NGFjMC1lYjlhLTRiNDItYjgxNC0yZjVmN2My
+        N2MyNTUiLCAiZmlhc19sZXZlbCI6ICI4IiwgImNhcGl0YWxfbWFya2VyIjog
+        IjAiLCAib2thdG8iOiAiNDUyODA1ODMwMDAiLCAib2t0bW8iOiAiNDUzNjIw
+        MDAiLCAidGF4X29mZmljZSI6ICI3NzE1IiwgInRheF9vZmZpY2VfbGVnYWwi
+        OiBudWxsLCAiZmxhdF9hcmVhIjogIjM0LjYiLCAic3F1YXJlX21ldGVyX3By
+        aWNlIjogIjE5ODExMyIsICJmbGF0X3ByaWNlIjogIjY4NTQ3MTAiLCAidGlt
+        ZXpvbmUiOiAiVVRDKzMiLCAiZ2VvX2xhdCI6ICI1NS44NzgzODE3IiwgImdl
+        b19sb24iOiAiMzcuNjUzOTk2NSIsICJxY19nZW8iOiAwLCAicWNfY29tcGxl
+        dGUiOiAwLCAicWNfaG91c2UiOiAyLCAicWMiOiAwLCAidW5wYXJzZWRfcGFy
+        dHMiOiBudWxsfV0=
+    http_version:
+  recorded_at: Wed, 27 Jan 2016 16:34:05 GMT
+recorded_with: VCR 2.9.3

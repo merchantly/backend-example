@@ -1,0 +1,6 @@
+<output>
+  <result>
+    <sms post_id="x124127456" id="99991" smstype="SENDSMS"  phone="+79999999991" sms_res_count="1"><![CDATA[Привет]]></sms>
+    <sms post_id="x124127456" id="99992"  smstype="SENDSMS"  phone="+79999999992" sms_res_count="1"><![CDATA[Привет]]></sms>
+  </result>
+</output>

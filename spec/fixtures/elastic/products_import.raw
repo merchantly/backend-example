@@ -1,0 +1,5 @@
+HTTP/1.1 200 OK
+Content-Type: application/json; charset=UTF-8
+Content-Length: 135
+
+{"took":34,"errors":false,"items":[{"index":{"_index":"kiiosk_test_goods","_type":"product","_id":"43776","_version":1,"status":201}}]}

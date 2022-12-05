@@ -1,0 +1,3 @@
+# system
+User-agent: *
+Allow: /

@@ -1,0 +1,51 @@
+---
+http_interactions:
+- request:
+    method: post
+    uri: http://api.taaasty.com/v1/entries/image.json
+    body:
+      encoding: US-ASCII
+      string: title=product_title2+%E2%80%93+10+%D1%80%D1%83%D0%B1.&image_url=http%3A%2F%2Fexample.com%2Fimages%2Ffallback%2Fproduct-none.png&privacy=private
+    headers:
+      X-User-Token:
+      - invalid_token
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+      User-Agent:
+      - Ruby
+      Content-Type:
+      - application/x-www-form-urlencoded
+  response:
+    status:
+      code: 401
+      message: Unauthorized
+    headers:
+      Server:
+      - nginx
+      Date:
+      - Fri, 25 Dec 2015 14:41:38 GMT
+      Content-Type:
+      - application/json
+      Content-Length:
+      - '89'
+      Connection:
+      - close
+      Status:
+      - 401 Unauthorized
+      Cache-Control:
+      - no-cache
+      X-Request-Id:
+      - 706201c3-6a55-40cd-b4dc-1b0ebf992fab
+      X-Runtime:
+      - '0.009489'
+      X-Rack-Cache:
+      - invalidate, pass
+    body:
+      encoding: UTF-8
+      string: '{"response_code":401,"error_code":"invalid_token","error":"Unauthorized.
+        Invalid token."}'
+    http_version: 
+  recorded_at: Fri, 25 Dec 2015 14:42:01 GMT
+recorded_with: VCR 2.9.3

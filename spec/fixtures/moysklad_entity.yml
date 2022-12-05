@@ -1,0 +1,22 @@
+--- !ruby/object:Moysklad::Entities::StockTO
+  productCode: SB041-011
+  uomName: \"шт\"
+  quantity: 20.0
+  reserve: 0.0
+  stock: 20.0
+  inTransit: 0.0
+  sumTotal: 552000.0
+  saleAmount: 3000000.0
+  minimumBalance: 0.0
+  category: \"Браслет-нить\"
+  externalCode: 8jT9cVexgNwkg-mEPggdQ1
+  parentUuid: 82cd6ad1-7b1f-11e4-7a07-673d0012ad1c
+  defaultConsignment: true
+  salePrice: 150000.0
+  consignmentName: \"Браслет-нить Маска родий красный\"
+  consignmentUuid: 047034f9-8acd-11e4-90a2-8ecb0019a373
+  goodRef: !ruby/object:Moysklad::Entities::GoodRef
+    uuid: 04702e7d-8acd-11e4-90a2-8ecb0019a36f
+    name: \"Браслет-нить Маска родий красный\"
+    code:
+    objectType: Good

@@ -1,0 +1,87 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: http://postabot.ru/tr/tracker2.php?carrier=ems&track-number=EA338712012RU
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+      User-Agent:
+      - Ruby
+      Host:
+      - postabot.ru
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Wed, 08 Apr 2015 14:57:39 GMT
+      Server:
+      - Apache/2.4.7 (Ubuntu)
+      X-Powered-By:
+      - PHP/5.5.9-1ubuntu4.5
+      Access-Control-Allow-Origin:
+      - "*"
+      Vary:
+      - Accept-Encoding
+      Content-Length:
+      - '710'
+      Content-Type:
+      - text/xml; charset=utf8
+    body:
+      encoding: ASCII-8BIT
+      string: !binary |-
+        PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz4KPHJlc3Bv
+        bnNlPgo8dHJhY2tfbnVtYmVyIGlkPSJFQTMzODcxMjAxMlJVIiBjYXJyaWVy
+        PSJFTVMiPgo8Y291bnQ+MTwvY291bnQ+CjxpdGVtcz4KPGl0ZW0gaWQ9IjEi
+        Pgo8cm91dGVTdGFydExvYyB2YWx1ZT0i0JLQuNC00L3QvtC1IEVNUyDQn9Cf
+        0KEtNSI+PC9yb3V0ZVN0YXJ0TG9jPgo8cm91dGVTdGFydFRpbWUgdmFsdWU9
+        IjEyLzA4LzIwMTQgMTc6MDAiPjwvcm91dGVTdGFydFRpbWU+Cjxyb3V0ZUVu
+        ZExvYyB2YWx1ZT0i0KPRgNGO0L/QuNC90YHQuiAzIj48L3JvdXRlRW5kTG9j
+        Pgo8cm91dGVFbmRUaW1lIHZhbHVlPSIxOC8wOC8yMDE0IDEzOjQwIj48L3Jv
+        dXRlRW5kVGltZT4KPHRyYW5zaXRUaW1lIHZhbHVlPSIiPjwvdHJhbnNpdFRp
+        bWU+CjxzaWduZWRGb3IgdmFsdWU9IiI+PC9zaWduZWRGb3I+CjxkZWxpdmVy
+        ZWQgdmFsdWU9InllcyI+PC9kZWxpdmVyZWQ+Cjx0cmFja2luZz4KPHRyYWNr
+        IGlkPSIwIiBkYXRlPSIxMi8wOC8yMDE0IiB0aW1lPSIxNzowMCIgZ2VvPSLQ
+        ktC40LTQvdC+0LUgRU1TINCf0J/QoS01LCAxNDI3MDUiIGV2ZW50PSLQn9GA
+        0LjRkdC8LiDQldC00LjQvdC40YfQvdGL0LkiPjwvdHJhY2s+Cjx0cmFjayBp
+        ZD0iMSIgZGF0ZT0iMTIvMDgvMjAxNCIgdGltZT0iMjE6NTUiIGdlbz0i0JLQ
+        uNC00L3QvtC1IEVNUyDQn9Cf0KEtNSwgMTQyNzA1IiBldmVudD0i0J7QsdGA
+        0LDQsdC+0YLQutCwLiDQn9C+0LrQuNC90YPQu9C+INGB0L7RgNGC0LjRgNC+
+        0LLQvtGH0L3Ri9C5INGG0LXQvdGC0YAiPjwvdHJhY2s+Cjx0cmFjayBpZD0i
+        MiIgZGF0ZT0iMTMvMDgvMjAxNCIgdGltZT0iMTY6NTUiIGdlbz0i0JzQvtGB
+        0LrQstCwIEVNUyDQodCmINGG0LXRhSDQnNCw0LPQuNGB0YLRgNCw0LvRjNC9
+        0L7QuSDQodC+0YDRgtC40YDQvtCy0LrQuCDQo9C+LCAxMzAyMTQiIGV2ZW50
+        PSLQntCx0YDQsNCx0L7RgtC60LAuINCh0L7RgNGC0LjRgNC+0LLQutCwIj48
+        L3RyYWNrPgo8dHJhY2sgaWQ9IjMiIGRhdGU9IjE0LzA4LzIwMTQiIHRpbWU9
+        IjEzOjM1IiBnZW89ItCc0L7RgdC60LLQsCBFTVMg0KHQpiDRhtC10YUg0JzQ
+        sNCz0LjRgdGC0YDQsNC70YzQvdC+0Lkg0KHQvtGA0YLQuNGA0L7QstC60Lgg
+        0KPQviwgMTMwMjE0IiBldmVudD0i0J7QsdGA0LDQsdC+0YLQutCwLiDQn9C+
+        0LrQuNC90YPQu9C+INGB0L7RgNGC0LjRgNC+0LLQvtGH0L3Ri9C5INGG0LXQ
+        vdGC0YAiPjwvdHJhY2s+Cjx0cmFjayBpZD0iNCIgZGF0ZT0iMTYvMDgvMjAx
+        NCIgdGltZT0iMTA6MTUiIGdlbz0i0KPRgNGO0L/QuNC90YHQuiAzLCA0MDMx
+        MTMiIGV2ZW50PSLQntCx0YDQsNCx0L7RgtC60LAuINCf0YDQuNCx0YvQu9C+
+        INCyINC80LXRgdGC0L4g0LLRgNGD0YfQtdC90LjRjyI+PC90cmFjaz4KPHRy
+        YWNrIGlkPSI1IiBkYXRlPSIxNi8wOC8yMDE0IiB0aW1lPSIxMzozMCIgZ2Vv
+        PSLQo9GA0Y7Qv9C40L3RgdC6IDMsIDQwMzExMyIgZXZlbnQ9ItCd0LXRg9C0
+        0LDRh9C90LDRjyDQv9C+0L/Ri9GC0LrQsCDQstGA0YPRh9C10L3QuNGPLiDQ
+        ktGA0LXQvNC10L3QvdC+0LUg0L7RgtGB0YPRgtGB0YLQstC40LUg0LDQtNGA
+        0LXRgdCw0YLQsCI+PC90cmFjaz4KPHRyYWNrIGlkPSI2IiBkYXRlPSIyMC8w
+        OC8yMDE0IiB0aW1lPSIwOTo1MCIgZ2VvPSLQktC+0LvQs9C+0LPRgNCw0LQg
+        0JzQodCmINCj0J7QodCfLCA0MDA5NjQiIGV2ZW50PSLQntCx0YDQsNCx0L7R
+        gtC60LAuINCf0L7QutC40L3Rg9C70L4g0YHQvtGA0YLQuNGA0L7QstC+0YfQ
+        vdGL0Lkg0YbQtdC90YLRgCI+PC90cmFjaz4KPHRyYWNrIGlkPSI3IiBkYXRl
+        PSIxOC8wOC8yMDE0IiB0aW1lPSIxMzo0MCIgZ2VvPSLQo9GA0Y7Qv9C40L3R
+        gdC6IDMsIDQwMzExMyIgZXZlbnQ9ItCS0YDRg9GH0LXQvdC40LUuINCS0YDR
+        g9GH0LXQvdC40LUg0LDQtNGA0LXRgdCw0YLRgyI+PC90cmFjaz4KPC90cmFj
+        a2luZz4KPC9pdGVtPgo8L2l0ZW1zPgo8L3RyYWNrX251bWJlcj4KPC9yZXNw
+        b25zZT4=
+    http_version: 
+  recorded_at: Wed, 08 Apr 2015 14:56:33 GMT
+recorded_with: VCR 2.9.3

@@ -1,0 +1,45 @@
+// для .b-page
+.b-page_theme-wannabe
+  font-family: "Gotham Pro", "Helvetica Neue", Helvetica, Arial, sans-serif
+  .b-logo
+    img
+      max-width: 170px
+  
+  .b-nav
+    &__list
+      border-color: transparent
+    &__link
+      text-transform: uppercase
+      font-weight: bold
+    &__list_sub
+      .b-nav__link
+        font-weight: normal
+
+  .b-item
+    color: #000
+    &__name,
+    &__price
+      font-size: 1.143em
+    &__price
+      font-weight: bold
+      &_old
+        font-weight: normal
+
+  .b-status
+    &_sold
+      background-color: transparent
+      padding-left: 0
+    
+    &_sale
+      display: none !important
+
+  .b-footer
+    border-top: 1px solid #EFEFEF
+
+  // Чтобы сделать товары по 4 в ряд нужно
+  // к .b-page добавить аттрибут data-in-row="2, 3 или 4"
+  // .b-item-list
+  //   &__item
+  //     @extend %three-twelfths
+  //     @extend %lap--one-half
+  //     @extend %palm--one-half

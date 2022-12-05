@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="windows-1251"?>
+<yml_catalog date="2000-11-16 20:17">
+  <shop>
+    <name>BestShop</name>
+    <company>Best online seller Inc.</company>
+    <url>http://best.seller.ru/</url>
+    <platform>CMS</platform>
+    <version>2.3</version>
+    <agency>Agency</agency>
+    <email>CMS@CMS.ru</email>
+    <currencies>
+      <currency id="RUB" rate="1"/>
+    </currencies>
+    <categories>
+      <category id="6">category</category>
+    </categories>
+
+    <offers>
+      <offer id="12346" available="true" bid="21">
+        <url>http://best.seller.ru/product_page.asp?pid=12348</url>
+        <price>699.54</price>
+        <currencyId>RUR</currencyId>
+        <categoryId>6</categoryId>
+        <picture>https://new.vk.com/images/safari_152.png</picture>
+        <store>true</store>
+        <pickup>true</pickup>
+        <delivery>false</delivery>
+        <local_delivery_cost>300</local_delivery_cost>
+        <name> Наручные часы Casio A1234567B </name>
+        <vendor> Casio </vendor>
+        <vendorCode> A1234567B </vendorCode>
+        <description> Изящные наручные часы.</description>
+        <sales_notes> Необходима предоплата.</sales_notes>
+        <country_of_origin> Япония </country_of_origin>
+        <barcode>0012345678901</barcode>
+        <param name="Максимальный формат">А4</param>
+          <param name="Технология печати">термическая струйная</param>
+          <param name="Тип печати">Цветная</param>
+          <param name="Количество страниц в месяц" unit="стр">1000</param>
+          <param name="Потребляемая мощность" unit="Вт">20</param>
+          <param name="Вес" unit="кг">2.73</param>
+          <param name="TEST" unit="кг">asd</param>
+        </offer>
+      </offer>
+      <offer id="12347" available="true" bid="21">
+        <url>http://best.seller.ru/product_page.asp?pid=12349</url>
+        <price>699.54</price>
+        <currencyId>RUR</currencyId>
+        <categoryId>6</categoryId>
+        <picture>https://new.vk.com/images/safari_152.png</picture>
+        <store>true</store>
+        <pickup>true</pickup>
+        <delivery>false</delivery>
+        <local_delivery_cost>300</local_delivery_cost>
+        <model> Наручные часы Casio A1234567C </model>
+        <vendor> Casio </vendor>
+        <vendorCode> A1234567C </vendorCode>
+        <description> Наручные часы.</description>
+        <sales_notes> Необходима предоплата.</sales_notes>
+        <country_of_origin> Япония </country_of_origin>
+        <barcode>0012345678902/barcode>
+      </offer>
+    </offers>
+  </shop>
+</yml_catalog>

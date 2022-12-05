@@ -1,0 +1,270 @@
+---
+http_interactions:
+- request:
+    method: post
+    uri: https://chatapi.viber.com/pa/send_message
+    body:
+      encoding: UTF-8
+      string: '{"type":"text","text":"Добро пожаловать в kiiiosk!\nВыберите магазин","auth_token":"viber_auth_token","receiver":"123"}'
+    headers:
+      Connection:
+      - close
+      Content-Type:
+      - application/json; charset=UTF-8
+      Host:
+      - chatapi.viber.com
+      User-Agent:
+      - http.rb/2.2.1
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Cache-Control:
+      - no-cache no-store
+      Content-Type:
+      - application/json
+      Date:
+      - Sun May 21 20:24:33 2017
+      Content-Length:
+      - '48'
+      Connection:
+      - Close
+    body:
+      encoding: ASCII-8BIT
+      string: '{"status":2,"status_message":"invalidAuthToken"}'
+    http_version: 
+  recorded_at: Mon, 22 May 2017 00:24:39 GMT
+- request:
+    method: post
+    uri: https://chatapi.viber.com/pa/send_message
+    body:
+      encoding: UTF-8
+      string: '{"keyboard":{"Type":"keyboard","Buttons":[{"Columns":2,"Rows":2,"Text":"\u003cfont
+        color=\"#ffffff\"\u003e\u003cb\u003eСахарок\u003c/b\u003e\u003c/font\u003e","TextSize":"large","TextHAlign":"center","TextVAlign":"center","ActionType":"reply","ActionBody":"categories-68","Image":"http://kiiiosk.ru/viber/saharok.png"},{"Columns":2,"Rows":2,"Text":"\u003cfont
+        color=\"#ffffff\"\u003e\u003cb\u003eWANNA?BE!\u003c/b\u003e\u003c/font\u003e","TextSize":"large","TextHAlign":"center","TextVAlign":"center","ActionType":"reply","ActionBody":"categories-5","Image":"http://kiiiosk.ru/viber/wannabe.png"},{"Columns":2,"Rows":2,"Text":"\u003cfont
+        color=\"#ffffff\"\u003e\u003cb\u003e365 detox\u003c/b\u003e\u003c/font\u003e","TextSize":"large","TextHAlign":"center","TextVAlign":"center","ActionType":"reply","ActionBody":"categories-575","Image":"http://kiiiosk.ru/viber/365detox.png"},{"Columns":2,"Rows":2,"Text":"\u003cfont
+        color=\"#ffffff\"\u003e\u003cb\u003eSPUTNIK\u003c/b\u003e\u003c/font\u003e","TextSize":"large","TextHAlign":"center","TextVAlign":"center","ActionType":"reply","ActionBody":"categories-31","Image":"http://kiiiosk.ru/viber/sputnik.png"},{"Columns":2,"Rows":2,"Text":"\u003cfont
+        color=\"#ffffff\"\u003e\u003cb\u003eVARVARA\u003c/b\u003e\u003c/font\u003e","TextSize":"large","TextHAlign":"center","TextVAlign":"center","ActionType":"reply","ActionBody":"categories-131","Image":"http://kiiiosk.ru/viber/varvara.png"},{"Columns":2,"Rows":2,"Text":"\u003cfont
+        color=\"#ffffff\"\u003e\u003cb\u003eЧестная ферма\u003c/b\u003e\u003c/font\u003e","TextSize":"large","TextHAlign":"center","TextVAlign":"center","ActionType":"reply","ActionBody":"categories-1233","Image":"http://kiiiosk.ru/viber/ferma.png"}]},"auth_token":"viber_auth_token","receiver":"123"}'
+    headers:
+      Connection:
+      - close
+      Content-Type:
+      - application/json; charset=UTF-8
+      Host:
+      - chatapi.viber.com
+      User-Agent:
+      - http.rb/2.2.1
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Cache-Control:
+      - no-cache no-store
+      Content-Type:
+      - application/json
+      Date:
+      - Sun May 21 20:24:34 2017
+      Content-Length:
+      - '48'
+      Connection:
+      - Close
+    body:
+      encoding: ASCII-8BIT
+      string: '{"status":2,"status_message":"invalidAuthToken"}'
+    http_version: 
+  recorded_at: Mon, 22 May 2017 00:24:40 GMT
+- request:
+    method: post
+    uri: https://chatapi.viber.com/pa/send_message
+    body:
+      encoding: UTF-8
+      string: '{"keyboard":{"Type":"keyboard","Buttons":[{"Columns":2,"Rows":2,"Text":"\u003cfont
+        color=\"#ffffff\"\u003e\u003cb\u003eСахарок\u003c/b\u003e\u003c/font\u003e","TextSize":"large","TextHAlign":"center","TextVAlign":"center","ActionType":"reply","ActionBody":"categories-68","Image":"http://kiiiosk.ru/viber/saharok.png"},{"Columns":2,"Rows":2,"Text":"\u003cfont
+        color=\"#ffffff\"\u003e\u003cb\u003eWANNA?BE!\u003c/b\u003e\u003c/font\u003e","TextSize":"large","TextHAlign":"center","TextVAlign":"center","ActionType":"reply","ActionBody":"categories-5","Image":"http://kiiiosk.ru/viber/wannabe.png"},{"Columns":2,"Rows":2,"Text":"\u003cfont
+        color=\"#ffffff\"\u003e\u003cb\u003e365 detox\u003c/b\u003e\u003c/font\u003e","TextSize":"large","TextHAlign":"center","TextVAlign":"center","ActionType":"reply","ActionBody":"categories-575","Image":"http://kiiiosk.ru/viber/365detox.png"},{"Columns":2,"Rows":2,"Text":"\u003cfont
+        color=\"#ffffff\"\u003e\u003cb\u003eSPUTNIK\u003c/b\u003e\u003c/font\u003e","TextSize":"large","TextHAlign":"center","TextVAlign":"center","ActionType":"reply","ActionBody":"categories-31","Image":"http://kiiiosk.ru/viber/sputnik.png"},{"Columns":2,"Rows":2,"Text":"\u003cfont
+        color=\"#ffffff\"\u003e\u003cb\u003eVARVARA\u003c/b\u003e\u003c/font\u003e","TextSize":"large","TextHAlign":"center","TextVAlign":"center","ActionType":"reply","ActionBody":"categories-131","Image":"http://kiiiosk.ru/viber/varvara.png"},{"Columns":2,"Rows":2,"Text":"\u003cfont
+        color=\"#ffffff\"\u003e\u003cb\u003eЧестная ферма\u003c/b\u003e\u003c/font\u003e","TextSize":"large","TextHAlign":"center","TextVAlign":"center","ActionType":"reply","ActionBody":"categories-1233","Image":"http://kiiiosk.ru/viber/ferma.png"}]},"auth_token":"viber_auth_token","receiver":"123"}'
+    headers:
+      Connection:
+      - close
+      Content-Type:
+      - application/json; charset=UTF-8
+      Host:
+      - chatapi.viber.com
+      User-Agent:
+      - http.rb/2.2.1
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Cache-Control:
+      - no-cache no-store
+      Content-Type:
+      - application/json
+      Date:
+      - Sun May 21 20:24:34 2017
+      Content-Length:
+      - '48'
+      Connection:
+      - Close
+    body:
+      encoding: ASCII-8BIT
+      string: '{"status":2,"status_message":"invalidAuthToken"}'
+    http_version: 
+  recorded_at: Mon, 22 May 2017 00:24:41 GMT
+- request:
+    method: post
+    uri: https://chatapi.viber.com/pa/send_message
+    body:
+      encoding: UTF-8
+      string: '{"type":"text","text":"Wannabe..\nКакие товары вас интересуют?","keyboard":{"Type":"keyboard","Buttons":[{"Columns":2,"Rows":2,"Text":"\u003cfont
+        color=\"#494E67\"\u003e\u003cb\u003ename1\u003c/b\u003e\u003c/font\u003e","TextSize":"large","TextHAlign":"center","TextVAlign":"center","ActionType":"reply","ActionBody":"goods-2","BgColor":"#f6f5f9"},{"Columns":2,"Rows":2,"Text":"\u003cfont
+        color=\\\"#494E67\\\"\u003e\u003cb\u003eНазад\u003c/b\u003e\u003c/font\u003e","TextSize":"large","TextHAlign":"center","TextVAlign":"center","ActionType":"reply","ActionBody":"back-shops","BgColor":"#f6f5f9"}]},"auth_token":"viber_auth_token","receiver":"123"}'
+    headers:
+      Connection:
+      - close
+      Content-Type:
+      - application/json; charset=UTF-8
+      Host:
+      - chatapi.viber.com
+      User-Agent:
+      - http.rb/2.2.1
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Cache-Control:
+      - no-cache no-store
+      Content-Type:
+      - application/json
+      Date:
+      - Sun May 21 20:24:36 2017
+      Content-Length:
+      - '48'
+      Connection:
+      - Close
+    body:
+      encoding: ASCII-8BIT
+      string: '{"status":2,"status_message":"invalidAuthToken"}'
+    http_version: 
+  recorded_at: Mon, 22 May 2017 00:24:42 GMT
+- request:
+    method: post
+    uri: https://chatapi.viber.com/pa/send_message
+    body:
+      encoding: UTF-8
+      string: '{"type":"text","text":"Вот некоторые товары из категории name1","keyboard":{"Type":"keyboard","Buttons":[{"Columns":2,"Rows":2,"Image":null,"ActionType":"reply","ActionBody":"good-1"},{"Columns":4,"Rows":2,"Text":"\u003cfont
+        color=\"#494E67\"\u003e\u003cb\u003e  product_title1\u003c/b\u003e\u003cbr\u003e 10.00
+        руб.\u003c/font\u003e","TextSize":"large","TextHAlign":"left","TextVAlign":"top","ActionType":"reply","ActionBody":"good-1","BgColor":"#ffffff"}]},"auth_token":"viber_auth_token","receiver":"123"}'
+    headers:
+      Connection:
+      - close
+      Content-Type:
+      - application/json; charset=UTF-8
+      Host:
+      - chatapi.viber.com
+      User-Agent:
+      - http.rb/2.2.1
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Cache-Control:
+      - no-cache no-store
+      Content-Type:
+      - application/json
+      Date:
+      - Sun May 21 20:24:38 2017
+      Content-Length:
+      - '48'
+      Connection:
+      - Close
+    body:
+      encoding: ASCII-8BIT
+      string: '{"status":2,"status_message":"invalidAuthToken"}'
+    http_version: 
+  recorded_at: Mon, 22 May 2017 00:24:44 GMT
+- request:
+    method: post
+    uri: https://chatapi.viber.com/pa/send_message
+    body:
+      encoding: UTF-8
+      string: '{"type":"picture","text":"Купить http://company11495412677.ru:3000/products/1-product_title1","media":null,"auth_token":"viber_auth_token","receiver":"123"}'
+    headers:
+      Connection:
+      - close
+      Content-Type:
+      - application/json; charset=UTF-8
+      Host:
+      - chatapi.viber.com
+      User-Agent:
+      - http.rb/2.2.1
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Cache-Control:
+      - no-cache no-store
+      Content-Type:
+      - application/json
+      Date:
+      - Sun May 21 20:24:42 2017
+      Content-Length:
+      - '48'
+      Connection:
+      - Close
+    body:
+      encoding: ASCII-8BIT
+      string: '{"status":2,"status_message":"invalidAuthToken"}'
+    http_version: 
+  recorded_at: Mon, 22 May 2017 00:24:48 GMT
+- request:
+    method: post
+    uri: https://chatapi.viber.com/pa/send_message
+    body:
+      encoding: UTF-8
+      string: '{"keyboard":{"Type":"keyboard","Buttons":[{"Columns":2,"Rows":2,"Text":"\u003cfont
+        color=\"#ffffff\"\u003e\u003cb\u003eСахарок\u003c/b\u003e\u003c/font\u003e","TextSize":"large","TextHAlign":"center","TextVAlign":"center","ActionType":"reply","ActionBody":"categories-68","Image":"http://kiiiosk.ru/viber/saharok.png"},{"Columns":2,"Rows":2,"Text":"\u003cfont
+        color=\"#ffffff\"\u003e\u003cb\u003eWANNA?BE!\u003c/b\u003e\u003c/font\u003e","TextSize":"large","TextHAlign":"center","TextVAlign":"center","ActionType":"reply","ActionBody":"categories-5","Image":"http://kiiiosk.ru/viber/wannabe.png"},{"Columns":2,"Rows":2,"Text":"\u003cfont
+        color=\"#ffffff\"\u003e\u003cb\u003e365 detox\u003c/b\u003e\u003c/font\u003e","TextSize":"large","TextHAlign":"center","TextVAlign":"center","ActionType":"reply","ActionBody":"categories-575","Image":"http://kiiiosk.ru/viber/365detox.png"},{"Columns":2,"Rows":2,"Text":"\u003cfont
+        color=\"#ffffff\"\u003e\u003cb\u003eSPUTNIK\u003c/b\u003e\u003c/font\u003e","TextSize":"large","TextHAlign":"center","TextVAlign":"center","ActionType":"reply","ActionBody":"categories-31","Image":"http://kiiiosk.ru/viber/sputnik.png"},{"Columns":2,"Rows":2,"Text":"\u003cfont
+        color=\"#ffffff\"\u003e\u003cb\u003eVARVARA\u003c/b\u003e\u003c/font\u003e","TextSize":"large","TextHAlign":"center","TextVAlign":"center","ActionType":"reply","ActionBody":"categories-131","Image":"http://kiiiosk.ru/viber/varvara.png"},{"Columns":2,"Rows":2,"Text":"\u003cfont
+        color=\"#ffffff\"\u003e\u003cb\u003eЧестная ферма\u003c/b\u003e\u003c/font\u003e","TextSize":"large","TextHAlign":"center","TextVAlign":"center","ActionType":"reply","ActionBody":"categories-1233","Image":"http://kiiiosk.ru/viber/ferma.png"}]},"auth_token":"viber_auth_token","receiver":"123"}'
+    headers:
+      Connection:
+      - close
+      Content-Type:
+      - application/json; charset=UTF-8
+      Host:
+      - chatapi.viber.com
+      User-Agent:
+      - http.rb/2.2.1
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Cache-Control:
+      - no-cache no-store
+      Content-Type:
+      - application/json
+      Date:
+      - Sun May 21 20:24:42 2017
+      Content-Length:
+      - '48'
+      Connection:
+      - Close
+    body:
+      encoding: ASCII-8BIT
+      string: '{"status":2,"status_message":"invalidAuthToken"}'
+    http_version: 
+  recorded_at: Mon, 22 May 2017 00:24:49 GMT
+recorded_with: VCR 3.0.3
