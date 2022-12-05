@@ -1,0 +1,2 @@
+class ProductCreator < ProductUpdater
+end
